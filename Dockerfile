@@ -10,6 +10,6 @@ LABEL repository="http://github.com/skx/github-action-build"
 LABEL homepage="http://github.com/skx/github-action-build"
 LABEL maintainer="Steve Kemp <steve@steve.fi>"
 
-COPY upload-script /usr/local/bin/build
+COPY build /usr/local/bin/build
 
 ENTRYPOINT ["/usr/local/bin/build"]
