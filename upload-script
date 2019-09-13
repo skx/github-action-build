@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Run a build-script, from within the repository.
+#
+
+# Show our action.
+set -e
+
+# Run the build-script, if it exists.
+if [ -e .github/build ]; then
+    chmod 755 .github/build
+    ./.github/build
+else
+    echo "Missing build-script!"
+    exit 1
+fi
