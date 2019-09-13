@@ -8,7 +8,7 @@ This repository contains a simple GitHub Action implementation, which allows you
 There are two steps required to use this action:
 
 * Enable the action inside your repository.
-  * This will mean creating a file `.github/workflows/release.yml` which is where the action is invoked, specifying a pattern to describe which binary-artifacts are uploaded.
+  * This might mean creating a file `.github/workflows/release.yml` which is where the action is invoked for release-steps, for example.
 * Add your project-specific `.github/build` script.
   * This is the script which will actually carry out your build-steps.
     * A C-project might just run `make`.
