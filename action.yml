@@ -1,0 +1,8 @@
+name: 'github-action-build'
+description: 'Build a project, creating artifacts'
+author: 'Steve Kemp'
+branding:
+  icon: settings
+  color: black
+using: 'docker'
+image: 'Dockerfile'
