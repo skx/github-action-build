@@ -40,8 +40,12 @@ jobs:
     - uses: actions/checkout@master
     - name: Generate
       uses: skx/github-action-build@master
+      with:
+        build: .github/build
 ```
 
 We assume that the `.github/build` script generated a series of binaries, and these can be acccessed by later steps in your workflow.  For example you might use my uploading-action:
 
 * [https://github.com/skx/github-action-publish-binaries](https://github.com/skx/github-action-publish-binaries)
+
+Of course you can specify a different script name, via the `build` argument in your workflow file.
