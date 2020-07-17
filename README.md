@@ -27,7 +27,7 @@ There are two steps required to use this action:
 
 This configuration runs the script `.github/build` every time a release is made of your project, and is defined in the file `.github/workflows/release.yml`:
 
-```
+```yml
 on:
   release:
     types: [created]
